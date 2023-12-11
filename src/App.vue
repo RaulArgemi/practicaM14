@@ -24,7 +24,6 @@ import { ref, reactive, provide } from "vue";
 
 import Product from "./types/Product";
 import Currency from "./types/Currency";
-
 import Order from "./components/Order.vue";
 
 const products = reactive<Array<Product>>([
@@ -47,7 +46,7 @@ const currencies = reactive<Array<Currency>>([
     },
 ]);
 
-const selectedCurrency = ref<string>("$")
+const selectedCurrency = ref<string>("€")
 const name = ref<string>("The Snazzy Burger");
 const cart = reactive<Array<Product | null>>([]);
 
